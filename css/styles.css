@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   background-color: #000000;
-  font-family: "Montserrat, sans-serif";
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
@@ -40,6 +40,10 @@ html {
 
 .cabecero {
   height: 300px;
+}
+
+.cabeceroLogo {
+  width: 300px;
 }
 
 /*# sourceMappingURL=styles.css.map */
