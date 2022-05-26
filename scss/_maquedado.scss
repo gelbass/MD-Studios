@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: $colorBg;
+    font-family: $fuentePrincipal;
+}
+html {
+    scroll-behavior: smooth;
+
+}#main{
+    display: grid;
+    grid-template-areas: 
+    "menu"
+    "header"
+    "nosotros"
+    "proyectos"
+    "contacto"
+    "footer";
+}
+#menu{
+    grid-area: menu;
+}
+#header{
+    grid-area: header;
+}
+#nosotros{
+    grid-area: nosotros;
+}
+#proyectos{
+    grid-area: proyectos;
+}
+#contacto{
+    grid-area: contacto;
+}
+#footer{
+    grid-area: footer;
+}
