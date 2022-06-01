@@ -1,6 +1,146 @@
-.cabecero{
+.cabecero {
     height: 300px;
 }
-.cabeceroLogo{
-    width: 300px;
+
+.cabeceroLogo {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.flechaStart {
+    color: $color1;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 50px 50px 0 0;
+    margin-top: 10px;
+}
+
+.contenedor__bg{
+    background-color: $colorBg;
+}
+.nosotros {
+    background-image: url("/img/nosotros.webp");
+    width: 100%;
+    height: 650px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contenedorTarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-color: $color2;
+    color: $color3;
+    margin: 50px 20px 50px 20px;
+    padding: 20px;
+    border-radius: 25px;
+    border-color: $color1;
+}
+
+.contenedorTarjeta--nosotros{
+    width: 450px;
+    height: 400px;
+    background-color: $color2;
+    color: $color4;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px;
+    border-radius: 25px;
+    border-color: $color1;
+    position: relative;
+    top: 150px;
+    right: -100px;
+}
+
+.contenedor__menu{
+    position: fixed;
+    height: 60px;
+    margin-top: 40px;
+    width: 100%;
+    z-index: 1;
+}
+.contenedor__menu--bar{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.contenedor__menu--items{
+    padding-left: 100px;
+    padding-right: 100px;
+    font-weight: bold;
+}
+
+.titulos--center{
+    text-align: center;
+    color: $color2;
+    font-weight: bold;
+}
+.titulos--nosotros{
+    text-align: center;
+    background-color: $color2;
+    font-weight: bold;
+}
+.textos{
+    background-color: $color2;
+    font-weight: bolder ;
+}
+
+.formulario{
+    width: 500px;
+    border: 2px $color1 solid;
+    margin: 40px;
+    padding: 40px;
+    border-radius: 25px;
+}
+.formulario__input{
+    color: $color4;
+    background-color: $color2;
+}
+.formulario__bloques {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.btn {
+    border: 2px $color1 solid;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 5px;
+    width: 150px;
+    background: $color1;
+    text-transform: uppercase;
+    font-weight: bold;
+    &:hover {
+        border: 2px $color1 solid;
+        border-radius: 12px;
+        padding: 10px;
+        margin: 5px;
+        cursor: pointer;
+        background: $color3;
+        color: $color1;
+    }
+}
+
+.contenedor__mapa{
+    width: 500px;
+    height: auto;
+    background-color: $color2;
+    border: 2px $color1 solid;
+    margin: 40px;
+    padding: 10px;
+    border-radius: 25px;
+}
+.mapa{
+    width: 470px;
+    height: 480px;
+    border-radius: 25px;
 }

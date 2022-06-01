@@ -1,49 +1,246 @@
+.cabecero {
+  height: 300px;
+}
+
+.cabeceroLogo {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.flechaStart {
+  color: #02BDBB;
+  font-size: 50px;
+  text-align: center;
+  border-radius: 50px 50px 0 0;
+  margin-top: 10px;
+}
+
+.contenedor__bg {
+  background-color: #000000;
+}
+
+.nosotros {
+  background-image: url("/img/nosotros.webp");
+  width: 100%;
+  height: 650px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.contenedorTarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-color: #ffffff;
+  color: #8E8E8E;
+  margin: 50px 20px 50px 20px;
+  padding: 20px;
+  border-radius: 25px;
+  border-color: #02BDBB;
+}
+
+.contenedorTarjeta--nosotros {
+  width: 450px;
+  height: 400px;
+  background-color: #ffffff;
+  color: #000000;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px;
+  border-radius: 25px;
+  border-color: #02BDBB;
+  position: relative;
+  top: 150px;
+  right: -100px;
+}
+
+.contenedor__menu {
+  position: fixed;
+  height: 60px;
+  margin-top: 40px;
+  width: 100%;
+  z-index: 1;
+}
+
+.contenedor__menu--bar {
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.contenedor__menu--items {
+  padding-left: 100px;
+  padding-right: 100px;
+  font-weight: bold;
+}
+
+.titulos--center {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.titulos--nosotros {
+  text-align: center;
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+.textos {
+  background-color: #ffffff;
+  font-weight: bolder;
+}
+
+.formulario {
+  width: 500px;
+  border: 2px #02BDBB solid;
+  margin: 40px;
+  padding: 40px;
+  border-radius: 25px;
+}
+
+.formulario__input {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.formulario__bloques {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.btn {
+  border: 2px #02BDBB solid;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 5px;
+  width: 150px;
+  background: #02BDBB;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.btn:hover {
+  border: 2px #02BDBB solid;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  background: #8E8E8E;
+  color: #02BDBB;
+}
+
+.contenedor__mapa {
+  width: 500px;
+  height: auto;
+  background-color: #ffffff;
+  border: 2px #02BDBB solid;
+  margin: 40px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.mapa {
+  width: 470px;
+  height: 480px;
+  border-radius: 25px;
+}
+
+.imagenes--clientes {
+  background-color: #000000;
+  width: 250px;
+  height: 200px;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.audios {
+  width: 100%;
+  height: 166px;
+  background-color: #ffffff;
+}
+
+.imagenes__logo--footer {
+  height: 100px;
+  padding-top: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
-  background-color: #000000;
   font-family: "Montserrat", sans-serif;
+}
+
+hr {
+  color: #02BDBB;
+  height: 5px !important;
+  opacity: 100%;
+  margin: 0px 0px 60px 0px;
+  padding: 0px;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-#main {
-  display: grid;
-  grid-template-areas: "menu" "header" "nosotros" "proyectos" "contacto" "footer";
+body {
+  background-color: #000000;
 }
 
 #menu {
   grid-area: menu;
+  background-color: #000000;
 }
 
 #header {
   grid-area: header;
+  background-color: #000000;
 }
 
 #nosotros {
   grid-area: nosotros;
+  background-color: #000000;
 }
 
 #proyectos {
   grid-area: proyectos;
+  background-color: #000000;
 }
 
 #contacto {
   grid-area: contacto;
+  background-color: #000000;
 }
 
 #footer {
   grid-area: footer;
+  background-color: #000000;
 }
 
-.cabecero {
-  height: 300px;
+.pie {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+  color: #ffffff;
 }
 
-.cabeceroLogo {
-  width: 300px;
+.pie__contenedor {
+  font-size: 30px;
+  padding: 20px;
+}
+
+.pie__contenedor--icon {
+  color: #02BDBB;
+}
+.pie__contenedor--icon:hover {
+  color: #8E8E8E;
 }
 
 /*# sourceMappingURL=styles.css.map */

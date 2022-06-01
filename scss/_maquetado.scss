@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $fuentePrincipal;
+    // 
+}
+hr{
+    color: $color1;
+    height: 5px !important; 
+    opacity: 100%;
+    margin: 0px 0px 60px 0px;
+    padding: 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: $colorBg;
+}
+// #main{
+//     display: grid;
+//     grid-template-rows: 60px 600px 650px 600px 200px;
+//     grid-template-areas: 
+//     "menu"
+//     "header"
+//     "nosotros"
+//     "proyectos"
+//     "contacto"
+//     "footer";
+// }
+#menu{
+    grid-area: menu;    
+    background-color: $colorBg;
+}
+#header{
+    grid-area: header;
+    background-color: $colorBg;
+    
+}
+#nosotros{
+    grid-area: nosotros;
+    background-color: $colorBg;
+    
+}
+#proyectos{
+    grid-area: proyectos;
+    background-color: $colorBg;
+}
+#contacto{
+    grid-area: contacto;
+    background-color: $colorBg;    
+}
+#footer{
+    grid-area: footer;
+    background-color: $colorBg;
+}
+.pie{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    color: $color2;
+}
+.pie__contenedor{
+    font-size: 30px;
+    padding: 20px;
+}
+.pie__contenedor--icon{
+    color: $color1;
+    &:hover{
+        color: $color3;
+    }
+}
