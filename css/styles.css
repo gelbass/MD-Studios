@@ -10,8 +10,9 @@
 }
 
 .contenedor__cabecero--logo {
-  width: 60%;
+  width: 40%;
   margin-top: 100px;
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 .flechaStart {
@@ -19,7 +20,7 @@
   font-size: 50px;
   text-align: center;
   border-radius: 50px 50px 0 0;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 .contenedor__bg {
@@ -58,7 +59,7 @@
   border-radius: 25px;
   border-color: #02BDBB;
   position: relative;
-  top: 150px;
+  top: 120px;
   right: -100px;
 }
 
@@ -173,6 +174,7 @@
 .imagenes__logo--footer {
   height: 100px;
   padding-top: 10px;
+  margin-bottom: 30px;
 }
 
 * {

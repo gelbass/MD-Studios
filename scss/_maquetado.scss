@@ -17,17 +17,7 @@ html {
 body{
     background-color: $colorBg;
 }
-// #main{
-//     display: grid;
-//     grid-template-rows: 60px 600px 650px 600px 200px;
-//     grid-template-areas: 
-//     "menu"
-//     "header"
-//     "nosotros"
-//     "proyectos"
-//     "contacto"
-//     "footer";
-// }
+
 #menu{
     grid-area: menu;    
     background-color: $colorBg;
