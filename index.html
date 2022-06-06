@@ -53,7 +53,7 @@
             <!-- FIN MENU -->
 
             <!-- INICIO LOGO MDSTUDIOS PRO -->
-            <div class="container-fluid p-0">
+            <div class="container-fluid p-0 home-full-height">
                 <div class="contenedor__cabecero d-flex flex-column align-items-center justify-content-center">
                     <img class="contenedor__cabecero--logo" src="img/MDS_1.svg" alt="MD Studio Pro">
 
@@ -63,9 +63,9 @@
                 <hr class="m-0">
             </div>
         </header>
-        <section class="container-fluid p-0 d-flex justify-content-md-center" id="nosotros">
-            <div class="nosotros">
-                <div class="contenedorTarjeta--nosotros" data-aos="fade-right" data-aos-duration="1500">
+        <section class="container-fluid p-0" id="nosotros">
+            <div class="nosotros d-flex justify-content-center align-items-center justify-content-lg-start">
+                <div class="contenedorTarjeta--nosotros container-sm" data-aos="fade-right" data-aos-duration="1500">
                     <h2 class="titulos--nosotros">Nosotros</h2>
                     <p class="textos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis cum, in
                         debitis
@@ -83,35 +83,35 @@
             <hr>
             <div class="container">
                 <h2 class="titulos--center">Nuestros Proyectos</h2>
-                <div class="row d-flex justify-content-center" data-aos="zoom-in">
-                    <div class="col-md contenedorTarjeta">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md contenedorTarjeta" data-aos="zoom-in">
                         <img class="imagenes--clientes img-fluid" src="img/MDS_1.svg" alt="">
                         <iframe class="audios" scrolling="no" frameborder="no" allow="autoplay"
                             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225257874&color=%2302bdbb&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
                     </div>
-                    <div class="col-md contenedorTarjeta">
+                    <div class="col-md contenedorTarjeta" data-aos="zoom-in">
                         <img class="imagenes--clientes" src="img/MDS_1.svg" alt="">
                         <iframe class="audios" scrolling="no" frameborder="no" allow="autoplay"
                             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225257874&color=%2302bdbb&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
                     </div>
-                    <div class="col-md contenedorTarjeta">
+                    <div class="col-md contenedorTarjeta" data-aos="zoom-in">
                         <img class="imagenes--clientes" src="img/MDS_1.svg" alt="">
                         <iframe class="audios" scrolling="no" frameborder="no" allow="autoplay"
                             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225257874&color=%2302bdbb&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center" data-aos="zoom-in">
-                    <div class="col-md contenedorTarjeta">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md contenedorTarjeta" data-aos="zoom-in">
                         <img class="imagenes--clientes" src="img/MDS_1.svg" alt="">
                         <iframe class="audios" scrolling="no" frameborder="no" allow="autoplay"
                             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225257874&color=%2302bdbb&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
                     </div>
-                    <div class="col-md contenedorTarjeta">
+                    <div class="col-md contenedorTarjeta" data-aos="zoom-in">
                         <img class="imagenes--clientes" src="img/MDS_1.svg" alt="">
                         <iframe class="audios" scrolling="no" frameborder="no" allow="autoplay"
                             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225257874&color=%2302bdbb&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
                     </div>
-                    <div class="col-md contenedorTarjeta">
+                    <div class="col-md contenedorTarjeta" data-aos="zoom-in">
                         <img class="imagenes--clientes" src="img/MDS_1.svg" alt="">
                         <iframe class="audios" scrolling="no" frameborder="no" allow="autoplay"
                             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225257874&color=%2302bdbb&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
@@ -215,6 +215,15 @@
             easing: 'ease-out-back',
             duration: 1000
         });
+        function buildHomeSection(homeSection) {
+            if (homeSection.length > 0) {
+                if (homeSection.hasClass('home-full-height')) {
+                    homeSection.height($(window).height());
+                } else {
+                    homeSection.height($(window).height() * 0.85);
+                }
+            }
+        }
     </script>
     <script>
         hljs.initHighlightingOnLoad();
@@ -224,6 +233,7 @@
                 scrollTop: $(window).height()
             }, 1200);
         });
+        
     </script>
 </body>
 
