@@ -205,11 +205,11 @@ playerVars: {
 
 // Array para almacenar referencias a los reproductores activos
 
-// Array para almacenar referencias a los reproductores activoslet player;
+// Array para almacenar referencias a los reproductores activoslet player;let player;
+
 
 let player;
 const playButton = document.getElementById('playButton');
-const playIcon = playButton.querySelector('i');
 
 // Función para cargar la API de YouTube de forma asíncrona
 function loadYouTubeAPI() {
@@ -222,22 +222,6 @@ function loadYouTubeAPI() {
 // Función que se ejecuta cuando la API de YouTube está lista
 function onYouTubeIframeAPIReady() {
     // No hacemos nada aquí, cargaremos el video cuando se haga clic en el botón de reproducción
-}
-
-// Función que se ejecuta cuando el reproductor está listo
-function onPlayerReady(event) {
-    // Asignamos el evento clic al botón de reproducción
-    playButton.addEventListener('click', () => {
-        if (player.getPlayerState() !== YT.PlayerState.PLAYING) {
-            player.playVideo();
-            playIcon.classList.remove('fa-play');
-            playIcon.classList.add('fa-pause');
-        } else {
-            player.pauseVideo();
-            playIcon.classList.remove('fa-pause');
-            playIcon.classList.add('fa-play');
-        }
-    });
 }
 
 // Función para crear el reproductor y cargar el video
@@ -258,7 +242,22 @@ function createYouTubePlayer(videoId) {
             fs: 0 // Ocultar el botón de pantalla completa
         },
         events: {
-            'onReady': onPlayerReady
+            'onReady': () => {
+                // Asignamos el evento clic al botón de reproducción
+                playButton.addEventListener('click', () => {
+                    const playIcon = playButton.querySelector('i');
+                    if (player.getPlayerState() !== YT.PlayerState.PLAYING) {
+                        player.playVideo();
+                        playIcon.classList.remove('fa-play');
+                        playIcon.classList.add('fa-pause');
+                    } else {
+                        player.pauseVideo();
+                        player.seekTo(0); // Reiniciamos el audio al principio
+                        playIcon.classList.remove('fa-pause');
+                        playIcon.classList.add('fa-play');
+                    }
+                });
+            }
         }
     });
 }
@@ -276,9 +275,8 @@ playButton.addEventListener('click', () => {
         // Si el reproductor ya está creado, solo reproducimos o pausamos el video
         if (player.getPlayerState() !== YT.PlayerState.PLAYING) {
             player.playVideo();
-            playIcon.classList.remove('fa-play');
-            playIcon.classList.add('fa-pause');
         } else {
+            player.pauseVideo();
             player.seekTo(0); // Reiniciamos el audio al principio
         }
     }
