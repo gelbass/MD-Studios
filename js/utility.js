@@ -207,12 +207,9 @@ playerVars: {
 
 // Array para almacenar referencias a los reproductores activoslet player;
 
-
-
-
-
 let player;
 const playButton = document.getElementById('playButton');
+const playIcon = playButton.querySelector('i');
 
 // Función para cargar la API de YouTube de forma asíncrona
 function loadYouTubeAPI() {
@@ -233,8 +230,12 @@ function onPlayerReady(event) {
     playButton.addEventListener('click', () => {
         if (player.getPlayerState() !== YT.PlayerState.PLAYING) {
             player.playVideo();
+            playIcon.classList.remove('fa-play');
+            playIcon.classList.add('fa-pause');
         } else {
             player.pauseVideo();
+            playIcon.classList.remove('fa-pause');
+            playIcon.classList.add('fa-play');
         }
     });
 }
@@ -267,7 +268,7 @@ window.onload = loadYouTubeAPI;
 
 // Asignar el evento clic al botón de reproducción con el video correspondiente
 playButton.addEventListener('click', () => {
-    const videoId = playButton.getAttribute('data-video-id');
+    const videoId = playButton.getAttribute('data-audio-url');
     if (!player) {
         // Si el reproductor no está creado, lo creamos y cargamos el video
         createYouTubePlayer(videoId);
@@ -275,8 +276,10 @@ playButton.addEventListener('click', () => {
         // Si el reproductor ya está creado, solo reproducimos o pausamos el video
         if (player.getPlayerState() !== YT.PlayerState.PLAYING) {
             player.playVideo();
+            playIcon.classList.remove('fa-play');
+            playIcon.classList.add('fa-pause');
         } else {
-            player.pauseVideo();
+            player.seekTo(0); // Reiniciamos el audio al principio
         }
     }
 });
