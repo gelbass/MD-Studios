@@ -80,6 +80,7 @@ function stickyAdd() {
   }
 }
 
+
 // Selecciona el elemento del menú
 const menu = document.getElementById('menu');
 
@@ -96,3 +97,186 @@ function toggleMenuVisibility() {
 
 // Agrega un event listener para detectar el scroll
 window.addEventListener('scroll', toggleMenuVisibility);
+
+
+
+
+/* 
+// Función para cargar la API de YouTube de forma asíncrona
+function loadYouTubeAPI() {
+  const tag = document.createElement('script');
+  tag.src = 'https://www.youtube.com/iframe_api';
+  const firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+}
+// Función que se ejecuta cuando la API de YouTube está lista
+let player;
+const audioUrl = playButton.getAttribute('data-audio-url');
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('youtubePlayer', {
+    height: '0',
+    width: '0',
+    videoId: audioUrl,
+    playerVars: {
+      autoplay: 0, // 0 para desactivar la reproducción automática
+      controls: 0, // 0 para ocultar los controles del reproductor
+      disablekb: 1, // 1 para deshabilitar el control de teclado
+      enablejsapi: 1, // 1 para habilitar la API JavaScript
+      origin: window.location.origin, // URL del sitio web actual
+      iv_load_policy: 3, // 3 para desactivar las anotaciones
+      loop: 1, // 1 para reproducir el audio en bucle
+      modestbranding: 1, // 1 para ocultar el logo de YouTube
+      playsinline: 1, // 1 para reproducir el audio en línea en dispositivos móviles
+      start: 0, // Segundo inicial del audio
+      fs: 0 // 0 para ocultar el botón de pantalla completa
+    },
+    events: {
+      'onReady': onPlayerReady
+    }
+  });
+}
+const playButton = document.getElementById('playButton');
+
+
+// Función que se ejecuta cuando el reproductor está listo
+function onPlayerReady(event) {
+  // Asigna el evento click al botón de reproducción
+  playButton.addEventListener('click', () => {
+    if (player.getPlayerState() !== YT.PlayerState.PLAYING) {
+      player.playVideo();
+      playButton.textContent = 'Pausar';
+    } else {
+      player.pauseVideo();
+      playButton.textContent = 'Reproducir';
+    }
+  });
+}
+
+// Cargar la API de YouTube cuando se cargue la página
+window.onload = loadYouTubeAPI;
+ // Función que se ejecuta cuando el reproductor cambia de estado
+function onPlayerStateChange(event) {
+  if (event.data === YT.PlayerState.PAUSED) {
+    player.seekTo(0); // Vuelve al segundo inicial del video
+  }
+}
+
+// Función que se ejecuta cuando el reproductor está listo
+function onPlayerReady(event) {
+  // Asigna el evento click al botón de reproducción
+  playButton.addEventListener('click', () => {
+    if (player.getPlayerState() !== YT.PlayerState.PLAYING) {
+      player.loadVideoById({
+        videoId: audioUrl,
+        startSeconds: 0
+      });
+      playIcon.classList.remove('fa-play');
+      playIcon.classList.add('fa-pause');
+    } else {
+      player.pauseVideo();
+      playIcon.classList.remove('fa-pause');
+      playIcon.classList.add('fa-play');
+    }
+  });
+   
+  
+  // Asigna el evento onStateChange al reproductor
+  player.addEventListener('onStateChange', onPlayerStateChange);
+}
+
+// Cargar la API de YouTube cuando se cargue la página
+window.onload = loadYouTubeAPI;
+playerVars: {
+  autoplay: 0, // No reproducir automáticamente al cargar el reproductor
+  controls: 0, // Ocultar los controles del reproductor
+  disablekb: 1, // Deshabilitar el control de teclado
+  enablejsapi: 1, // Habilitar la API JavaScript
+  modestbranding: 1, // Ocultar el logo de YouTube
+  playsinline: 1, // Reproducir el video en línea en dispositivos móviles
+  fs: 0 // Ocultar el botón de pantalla completa
+  // Otras configuraciones del reproductor pueden agregarse aquí
+}
+ */// Array para almacenar referencias a los reproductores activos
+
+ // Array para almacenar referencias a los reproductores activos
+// Array para almacenar referencias a los reproductores activos
+
+// Array para almacenar referencias a los reproductores activos
+
+// Array para almacenar referencias a los reproductores activos
+
+// Array para almacenar referencias a los reproductores activoslet player;
+
+
+
+
+
+let player;
+const playButton = document.getElementById('playButton');
+
+// Función para cargar la API de YouTube de forma asíncrona
+function loadYouTubeAPI() {
+    const tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+}
+
+// Función que se ejecuta cuando la API de YouTube está lista
+function onYouTubeIframeAPIReady() {
+    // No hacemos nada aquí, cargaremos el video cuando se haga clic en el botón de reproducción
+}
+
+// Función que se ejecuta cuando el reproductor está listo
+function onPlayerReady(event) {
+    // Asignamos el evento clic al botón de reproducción
+    playButton.addEventListener('click', () => {
+        if (player.getPlayerState() !== YT.PlayerState.PLAYING) {
+            player.playVideo();
+        } else {
+            player.pauseVideo();
+        }
+    });
+}
+
+// Función para crear el reproductor y cargar el video
+function createYouTubePlayer(videoId) {
+    player = new YT.Player('youtubePlayer', {
+        height: '0',
+        width: '0',
+        videoId: videoId,
+        playerVars: {
+            autoplay: 0, // Desactivar la reproducción automática
+            controls: 0, // Ocultar los controles del reproductor
+            disablekb: 1, // Deshabilitar el control de teclado
+            enablejsapi: 1, // Habilitar la API JavaScript
+            origin: window.location.origin, // URL del sitio web actual
+            iv_load_policy: 3, // Desactivar las anotaciones
+            modestbranding: 1, // Ocultar el logo de YouTube
+            playsinline: 1, // Reproducir el audio en línea en dispositivos móviles
+            fs: 0 // Ocultar el botón de pantalla completa
+        },
+        events: {
+            'onReady': onPlayerReady
+        }
+    });
+}
+
+// Cargar la API de YouTube cuando se cargue la página
+window.onload = loadYouTubeAPI;
+
+// Asignar el evento clic al botón de reproducción con el video correspondiente
+playButton.addEventListener('click', () => {
+    const videoId = playButton.getAttribute('data-video-id');
+    if (!player) {
+        // Si el reproductor no está creado, lo creamos y cargamos el video
+        createYouTubePlayer(videoId);
+    } else {
+        // Si el reproductor ya está creado, solo reproducimos o pausamos el video
+        if (player.getPlayerState() !== YT.PlayerState.PLAYING) {
+            player.playVideo();
+        } else {
+            player.pauseVideo();
+        }
+    }
+});

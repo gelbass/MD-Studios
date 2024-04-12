@@ -23,6 +23,9 @@
   margin-top: 50px;
   display: inline;
 }
+.flechaStart:hover {
+  color: #8E8E8E;
+}
 
 .contenedor {
   width: 100%;
@@ -35,16 +38,11 @@
 
 .contenedorTarjeta {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  width: 300px;
-  height: auto;
-  background-color: #ffffff;
-  color: #8E8E8E;
   margin: 30px;
   padding: 20px;
-  border-radius: 25px;
-  border-color: #01BDBB;
+  justify-content: space-between;
 }
 
 .contenedor__nosotros {
@@ -193,8 +191,11 @@
   font-weight: bold;
 }
 
+.titulos--audio {
+  font-weight: bold;
+}
+
 .textos {
-  background-color: #ffffff;
   font-weight: bolder;
 }
 
@@ -239,6 +240,20 @@
   cursor: pointer;
   background: #8E8E8E;
   color: #01BDBB;
+}
+
+.btn--play {
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: #01BDBB;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  align-content: center;
+}
+.btn--play:hover {
+  color: #8E8E8E;
 }
 
 .contenedor__mapa {

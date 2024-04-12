@@ -22,6 +22,9 @@
     border-radius: 50px 50px 0 0;
     margin-top: 50px;
     display: inline;
+    &:hover {
+        color: $color3;
+    }
    
 }
 
@@ -36,16 +39,11 @@
 
 .contenedorTarjeta {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    width: 300px;
-    height: auto;
-    background-color: $color2;
-    color: $color3;
     margin: 30px;
     padding: 20px;
-    border-radius: 25px;
-    border-color: $color1;
+    justify-content: space-between;
 }
 
 .contenedor__nosotros {
@@ -202,7 +200,6 @@
     font-weight: bold;
     font-size: 57.852px;
     font-style: normal;
-    //font-weight: 700;
     line-height: normal;
 }
 
@@ -211,9 +208,11 @@
     background-color: $color2;
     font-weight: bold;
 }
+.titulos--audio {
+    font-weight: bold;
+}
 
 .textos {
-    background-color: $color2;
     font-weight: bolder;
 }
 
@@ -258,6 +257,20 @@
         cursor: pointer;
         background: $color3;
         color: $color1;
+    }
+}
+
+.btn--play{
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: $color1;
+    color: $color2;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    &:hover {
+        color: $color3;
     }
 }
 
