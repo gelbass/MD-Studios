@@ -1,240 +1,400 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,500;1,800&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,500;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MD Studio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <main id="main">
-        <header class="contenedor__bg" id="header">
-            <!-- INICIO MENU -->
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="container-fluid contenedor__menu" id="menu" data-aos="fade-down" data-aos-duration="1500">
-                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse contenedor__menu--bar" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item contenedor__menu--items">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item contenedor__menu--items">
-                                <a class="nav-link" href="#nosotros">Nosotros</a>
-                            </li>
-                            <li class="nav-item contenedor__menu--items">
-                                <a class="nav-link" href="#proyectos">Proyectos</a>
-                            </li>
-                            <li class="nav-item contenedor__menu--items">
-                                <a class="nav-link" href="#contacto">Contáctanos</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- FIN MENU -->
+      <header class="contenedor__bg" id="header">
+        <!-- INICIO MENU -->
+        <nav class="navbar contenedor__menu navbar-expand-lg navbar-dark"id="menu">
+          <div
+            class="container-fluid contenedor__menu"
+            
+            data-aos="fade-down"
+            data-aos-duration="1500"
+          >
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse contenedor__menu--bar"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item contenedor__menu--items">
+                  <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item contenedor__menu--items">
+                  <a class="nav-link" href="#nosotros">Nosotros</a>
+                </li>
+                <li class="nav-item contenedor__menu--items">
+                  <a class="nav-link" href="#proyectos">Proyectos</a>
+                </li>
+                <li class="nav-item contenedor__menu--items">
+                  <a class="nav-link" href="#contacto">Contáctanos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- FIN MENU -->
+      </header>
+      <section class="container-fluid p-0" id="home">
+        <!-- INICIO LOGO MDSTUDIOS PRO -->
+        <div
+          class="contenedor contenedor__cabecero d-flex flex-column align-items-center justify-content-center"
+        >
+          <img
+            class="contenedor__cabecero--logo"
+            src="img/MDS_1.svg"
+            alt="MD Studio Pro"
+          />
 
-            <!-- INICIO LOGO MDSTUDIOS PRO -->
-            <div class="container-fluid p-0 home-full-height">
-                <div class="contenedor__cabecero d-flex flex-column align-items-center justify-content-center">
-                    <img class="contenedor__cabecero--logo" src="img/MDS_1.svg" alt="MD Studio Pro">
-
-                    <a class="flechaStart" href="#nosotros"><i class="fa-solid fa-angles-down"></i></a>
-                </div>
-                <!-- FIN LOGO MDSTUDIOS PRO -->
-                <hr class="m-0">
-            </div>
-        </header>
-        <section class="container-fluid p-0" id="nosotros">
-            <div class="nosotros d-flex justify-content-center align-items-center justify-content-lg-start">
-                <div class="contenedorTarjeta--nosotros container-sm" data-aos="fade-right" data-aos-duration="1500">
-                    <h2 class="titulos--nosotros">Nosotros</h2>
-                    <p class="textos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis cum, in
-                        debitis
-                        dignissimos soluta fugit tempora quae. Nihil nobis veritatis neque quia, accusantium delectus!
-                        Unde, enim excepturi! Nesciunt, sunt maxime.</p>
-                    <p class="textos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis cum, in
-                        debitis
-                        dignissimos soluta fugit tempora quae. Nihil nobis veritatis neque quia, accusantium delectus!
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="proyectos">
-            <hr>
-            <div class="container">
-                <h2 class="titulos--center">Nuestros Proyectos</h2>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md contenedorTarjeta" data-aos="zoom-in">
-                        <img class="imagenes--clientes img-fluid" src="img/MDS_1.svg" alt="">
-                        <iframe class="audios" scrolling="no" frameborder="no" allow="autoplay"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225257874&color=%2302bdbb&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
-                    </div>
-                    <div class="col-md contenedorTarjeta" data-aos="zoom-in">
-                        <img class="imagenes--clientes" src="img/MDS_1.svg" alt="">
-                        <iframe class="audios" scrolling="no" frameborder="no" allow="autoplay"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225257874&color=%2302bdbb&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
-                    </div>
-                    <div class="col-md contenedorTarjeta" data-aos="zoom-in">
-                        <img class="imagenes--clientes" src="img/MDS_1.svg" alt="">
-                        <iframe class="audios" scrolling="no" frameborder="no" allow="autoplay"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225257874&color=%2302bdbb&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
-                    </div>
-                </div>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md contenedorTarjeta" data-aos="zoom-in">
-                        <img class="imagenes--clientes" src="img/MDS_1.svg" alt="">
-                        <iframe class="audios" scrolling="no" frameborder="no" allow="autoplay"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225257874&color=%2302bdbb&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
-                    </div>
-                    <div class="col-md contenedorTarjeta" data-aos="zoom-in">
-                        <img class="imagenes--clientes" src="img/MDS_1.svg" alt="">
-                        <iframe class="audios" scrolling="no" frameborder="no" allow="autoplay"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225257874&color=%2302bdbb&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
-                    </div>
-                    <div class="col-md contenedorTarjeta" data-aos="zoom-in">
-                        <img class="imagenes--clientes" src="img/MDS_1.svg" alt="">
-                        <iframe class="audios" scrolling="no" frameborder="no" allow="autoplay"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225257874&color=%2302bdbb&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="contacto">
-            <hr>
-            <div class="container-fluid">
-                <h2 class="titulos--center">Contactanos</h2>
-                <div class="row">
-                    <div class="col-md d-flex justify-content-center">
-                        <form class="form-control formulario " action="">
-                            <div class="form-group row formulario__bloques">
-                                <label class="col-sm-2 form-label" for="nombre">Nombre </label>
-                                <div class="col-sm-10">
-                                    <input class="formulario__input form-control" type="text" name="nombre" id="nombre"
-                                        placeholder="Ingrese Nombre" required>
-                                </div>
-                            </div>
-                            <div class="form-group row formulario__bloques">
-                                <label class="col-sm-2 form-label " for="apellido">Apellido</label>
-                                <div class="col-sm-10">
-                                    <input class="formulario__input form-control" type="text" name="apellido"
-                                        id="apellido" placeholder="Ingrese Apellido" required>
-                                </div>
-                            </div>
-                            <div class="form-group row formulario__bloques">
-                                <label class="col-sm-2 form-label " for="email">Email</label>
-                                <div class="col-sm-10">
-                                    <input class="formulario__input form-control" type="email" name="email" id="email"
-                                        placeholder="Ingrese email" required>
-                                </div>
-                            </div>
-                            <div class="form-group row formulario__bloques">
-                                <label class="col-sm-2 form-label" for="mensaje">Mensaje</label>
-                                <div class="col-sm-10">
-                                    <textarea class="formulario__input form-control" name="mensaje" id="mensaje"
-                                        cols="20" rows="4" placeholder="Ingrese mensaje"></textarea>
-                                </div>
-                            </div>
-                            <div class=" form-group form-check formulario__bloques d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" name="" id="checkbox" required>
-                                <label for="checkbox" class="form-check-label">Acepto politicas y condiciones</label>
-                            </div>
-                            <div class="form-group formulario__bloques d-flex justify-content-center">
-                                <input class="btn" type="submit" value="Enviar">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-md d-flex justify-content-center">
-                        <div class="container contenedor__mapa d-flex justify-content-center">
-                            <iframe class="mapa"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15707.04466563921!2d-68.00383607261624!3d10.200040633426108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e805d7e6f1b5d8d%3A0xb5d6d0e9bf40ba00!2sLas%20Chimeneas%2C%20Valencia%202001%2C%20Carabobo%2C%20Venezuela!5e0!3m2!1ses-419!2suy!4v1653961608284!5m2!1ses-419!2suy"
-                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-        </section>
-        <!-- SUSCRIPCION -->
+          <a class="flechaStart" href="#nosotros"
+            ><i class="fa-solid fa-angles-down"></i
+          ></a>
         </div>
-        <!-- FOOTER -->
-        <footer class="container-fluid pie contenedor__bg" id="footer">
-            <div class="row">
-                <div class="col-md">
-                    <a href="#"><img src="./img/MDS_1.svg" class="imagenes__logo--footer d-inline-block"
-                            alt="FC Desing"></a>
-                    <h3>MD Studios Pro</h3>
-                    <div class="pie__contenedor">
-                        <a class="pie__contenedor--icon" href="https://www.facebook.com/FaniCreative/" target="_blank"
-                            rel="noopener noreferrer"><i class="fa-brands fa-facebook link"></i></a>
-                        <a class="pie__contenedor--icon" href="https://www.instagram.com/impulso.dg/" target="_blank"
-                            rel="noopener noreferrer"><i class="fa-brands fa-instagram link"></i></a>
-                        <a class="pie__contenedor--icon" href="https://wa.me/+5493516789037/" target="_blank"
-                            rel="noopener noreferrer"><i class="fa-brands fa-whatsapp link"></i></a>
-                    </div>
-                </div>
-            </div>
-            <strong>@2022 Germán Lacruz. Todos los derechos reservados.</strong>
-        </footer>
-        <!-- FIN FOOTER -->
+        <!-- FIN LOGO MDSTUDIOS PRO -->
+      </section>
+      <section class="container-fluid p-0" id="nosotros">
+        <div
+          class="contenedor contenedor__nosotros"
+        >
+          <div
+            class="contenedor__nosotros--texto container-sm"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <h2 class="titulos--nosotros">Nosotros</h2>
+            <p class="textos">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Perspiciatis cum, in debitis dignissimos soluta fugit tempora
+              quae. Nihil nobis veritatis neque quia, accusantium delectus!
+              Unde, enim excepturi! Nesciunt, sunt maxime.
+            </p>
+            <p class="textos">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Perspiciatis cum, in debitis dignissimos soluta fugit tempora
+              quae. Nihil nobis veritatis neque quia, accusantium delectus!
+            </p>
+          </div>
+          <div class="contenedor__nosotros--imagen  container-sm">
+            <img src="img/nosotros.webp" alt="Nosotros">
+          </div>
+        </div>
+        <div class="contenedor contenedor__trabajos"  id="trabajos">
+          <h1 class="titulos--center">Que hacemos</h1>
+          <div class="d-flex justify-content-center contenedor__trabajos--cards">
+              <div class="contenedor__cards">
+                <svg xmlns="http://www.w3.org/2000/svg" width="75" height="71" viewBox="0 0 75 71" fill="none">
+                  <path d="M74.375 0.769531V49.207C74.375 52.804 72.9461 56.2537 70.4026 58.7972C67.8592 61.3406 64.4095 62.7695 60.8125 62.7695C57.2155 62.7695 53.7658 61.3406 51.2224 58.7972C48.6789 56.2537 47.25 52.804 47.25 49.207C47.25 45.61 48.6789 42.1604 51.2224 39.6169C53.7658 37.0734 57.2155 35.6445 60.8125 35.6445C62.905 35.6445 64.8812 36.1095 66.625 36.962V14.2158L27.875 22.4695V56.957C27.875 60.554 26.4461 64.0037 23.9026 66.5472C21.3592 69.0906 17.9095 70.5195 14.3125 70.5195C10.7155 70.5195 7.26583 69.0906 4.72236 66.5472C2.1789 64.0037 0.75 60.554 0.75 56.957C0.75 53.36 2.1789 49.9104 4.72236 47.3669C7.26583 44.8234 10.7155 43.3945 14.3125 43.3945C16.405 43.3945 18.3813 43.8595 20.125 44.712V12.3945L74.375 0.769531Z" fill="#01BDBB"/>
+                </svg>
+                <h3>Jingles</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="contenedor__cards--center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="75" height="71" viewBox="0 0 75 71" fill="none">
+                  <path d="M74.375 0.769531V49.207C74.375 52.804 72.9461 56.2537 70.4026 58.7972C67.8592 61.3406 64.4095 62.7695 60.8125 62.7695C57.2155 62.7695 53.7658 61.3406 51.2224 58.7972C48.6789 56.2537 47.25 52.804 47.25 49.207C47.25 45.61 48.6789 42.1604 51.2224 39.6169C53.7658 37.0734 57.2155 35.6445 60.8125 35.6445C62.905 35.6445 64.8812 36.1095 66.625 36.962V14.2158L27.875 22.4695V56.957C27.875 60.554 26.4461 64.0037 23.9026 66.5472C21.3592 69.0906 17.9095 70.5195 14.3125 70.5195C10.7155 70.5195 7.26583 69.0906 4.72236 66.5472C2.1789 64.0037 0.75 60.554 0.75 56.957C0.75 53.36 2.1789 49.9104 4.72236 47.3669C7.26583 44.8234 10.7155 43.3945 14.3125 43.3945C16.405 43.3945 18.3813 43.8595 20.125 44.712V12.3945L74.375 0.769531Z" fill="#01BDBB"/>
+                </svg>
+                <h3>Producción</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="contenedor__cards">
+                <svg xmlns="http://www.w3.org/2000/svg" width="75" height="71" viewBox="0 0 75 71" fill="none">
+                  <path d="M74.375 0.769531V49.207C74.375 52.804 72.9461 56.2537 70.4026 58.7972C67.8592 61.3406 64.4095 62.7695 60.8125 62.7695C57.2155 62.7695 53.7658 61.3406 51.2224 58.7972C48.6789 56.2537 47.25 52.804 47.25 49.207C47.25 45.61 48.6789 42.1604 51.2224 39.6169C53.7658 37.0734 57.2155 35.6445 60.8125 35.6445C62.905 35.6445 64.8812 36.1095 66.625 36.962V14.2158L27.875 22.4695V56.957C27.875 60.554 26.4461 64.0037 23.9026 66.5472C21.3592 69.0906 17.9095 70.5195 14.3125 70.5195C10.7155 70.5195 7.26583 69.0906 4.72236 66.5472C2.1789 64.0037 0.75 60.554 0.75 56.957C0.75 53.36 2.1789 49.9104 4.72236 47.3669C7.26583 44.8234 10.7155 43.3945 14.3125 43.3945C16.405 43.3945 18.3813 43.8595 20.125 44.712V12.3945L74.375 0.769531Z" fill="#01BDBB"/>
+                </svg>
+                <h3>Masterización</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+          </div>
+      </div>
 
-        <!-- ANCLA INICIO DE PAGINA -->
-        <!-- <a class="subir" href="#">
+      </section>
+
+      <section class="container-fluid p-0" id="proyectos">
+        <div class="contenedor contenedor__proyectos">
+          <h2 class="titulos--center">Nuestros Proyectos</h2>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md contenedorTarjeta" data-aos="zoom-in">
+              <iframe class="audios" 
+                      scrolling="no" 
+                      frameborder="no" 
+                      allow="autoplay"
+                      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225257874&color=%2302bdbb&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false">
+                    </iframe>
+            </div>
+            <div class="col-md contenedorTarjeta" data-aos="zoom-in">
+              <iframe class="audios" 
+                      scrolling="no" 
+                      frameborder="no" 
+                      allow="autoplay"
+                      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225257874&color=%2302bdbb&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false">
+                    </iframe>
+            </div>
+            <div class="col-md contenedorTarjeta" data-aos="zoom-in">
+              <iframe class="audios" 
+                      scrolling="no" 
+                      frameborder="no" 
+                      allow="autoplay"
+                      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225257874&color=%2302bdbb&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false">
+                    </iframe>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md contenedorTarjeta" data-aos="zoom-in">
+              <iframe class="audios" 
+                      scrolling="no" 
+                      frameborder="no" 
+                      allow="autoplay"
+                      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225257874&color=%2302bdbb&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false">
+                    </iframe>
+            </div>
+            <div class="col-md contenedorTarjeta" data-aos="zoom-in">
+              <iframe class="audios" 
+                      scrolling="no" 
+                      frameborder="no" 
+                      allow="autoplay"
+                      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225257874&color=%2302bdbb&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false">
+                    </iframe>
+            </div>
+            <div class="col-md contenedorTarjeta" data-aos="zoom-in">
+              <iframe class="audios" 
+                      scrolling="no" 
+                      frameborder="no" 
+                      allow="autoplay"
+                      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225257874&color=%2302bdbb&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false">
+                    </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid p-0" id="contacto">
+        <div class="contenedor contenedor__contacto">
+          <h2 class="titulos--center">Contactanos</h2>
+          <div class="container-fluid row">
+            <div class="col-md d-flex justify-content-center">
+              <form class="form-control formulario" action="">
+                <div class="form-group row formulario__bloques">
+                  <label class="col-sm-2 form-label" for="nombre"
+                    >Nombre
+                  </label>
+                  <div class="col-sm-10">
+                    <input
+                      class="formulario__input form-control"
+                      type="text"
+                      name="nombre"
+                      id="nombre"
+                      placeholder="Ingrese Nombre"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group row formulario__bloques">
+                  <label class="col-sm-2 form-label" for="apellido"
+                    >Apellido</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      class="formulario__input form-control"
+                      type="text"
+                      name="apellido"
+                      id="apellido"
+                      placeholder="Ingrese Apellido"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group row formulario__bloques">
+                  <label class="col-sm-2 form-label" for="email">Email</label>
+                  <div class="col-sm-10">
+                    <input
+                      class="formulario__input form-control"
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Ingrese email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group row formulario__bloques">
+                  <label class="col-sm-2 form-label" for="mensaje"
+                    >Mensaje</label
+                  >
+                  <div class="col-sm-10">
+                    <textarea
+                      class="formulario__input form-control"
+                      name="mensaje"
+                      id="mensaje"
+                      cols="20"
+                      rows="4"
+                      placeholder="Ingrese mensaje"
+                    ></textarea>
+                  </div>
+                </div>
+                <div
+                  class="form-group form-check formulario__bloques d-flex justify-content-center"
+                >
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name=""
+                    id="checkbox"
+                    required
+                  />
+                  <label for="checkbox" class="form-check-label"
+                    >Acepto politicas y condiciones</label
+                  >
+                </div>
+                <div
+                  class="form-group formulario__bloques d-flex justify-content-center"
+                >
+                  <input class="btn" type="submit" value="Enviar" />
+                </div>
+              </form>
+            </div>
+            <div class="col-md d-flex justify-content-center">
+              <div
+                class="contenedor__mapa d-flex justify-content-center"
+              >
+                <iframe
+                  class="mapa"
+                  title="mapa"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15707.04466563921!2d-68.00383607261624!3d10.200040633426108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e805d7e6f1b5d8d%3A0xb5d6d0e9bf40ba00!2sLas%20Chimeneas%2C%20Valencia%202001%2C%20Carabobo%2C%20Venezuela!5e0!3m2!1ses-419!2suy!4v1653961608284!5m2!1ses-419!2suy"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SUSCRIPCION -->
+
+      <!-- FOOTER -->
+      <footer class="container-fluid pie contenedor__bg" id="footer">
+        <a class="flechaStart" href="#home" 
+        ><i class="fa-solid fa-angles-up"></i></a>        
+        <div class="row">
+          <div class="col-md">
+            <a href="#"
+              ><img
+                src="./img/MDS_1.svg"
+                class="imagenes__logo--footer d-inline-block"
+                alt="FC Desing"
+            /></a>
+            <h3>MD Studios Pro</h3>
+            <div class="pie__contenedor">
+              <a
+                class="pie__contenedor--icon"
+                href="https://www.facebook.com/FaniCreative/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-facebook link"></i
+              ></a>
+              <a
+                class="pie__contenedor--icon"
+                href="https://www.instagram.com/impulso.dg/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-instagram link"></i
+              ></a>
+              <a
+                class="pie__contenedor--icon"
+                href="https://wa.me/+5493516789037/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-whatsapp link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <strong>@2022 Germán Lacruz. Todos los derechos reservados.</strong>
+      </footer>
+      <!-- FIN FOOTER -->
+
+      <!-- ANCLA INICIO DE PAGINA -->
+      <!-- <a class="subir" href="#">
             <i class="fa-solid fa-angle-up"></i>
         </a> -->
-        <!-- FIN ANCLA INICIO DE PAGINA -->
+      <!-- FIN ANCLA INICIO DE PAGINA -->
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/utility.js"></script>
     <script>
-        AOS.init({
-            easing: 'ease-out-back',
-            duration: 1000
-        });
-        function buildHomeSection(homeSection) {
-            if (homeSection.length > 0) {
-                if (homeSection.hasClass('home-full-height')) {
-                    homeSection.height($(window).height());
-                } else {
-                    homeSection.height($(window).height() * 0.85);
-                }
-            }
+      AOS.init({
+        easing: "ease-out-back",
+        duration: 1000,
+      });
+      function buildHomeSection(homeSection) {
+        if (homeSection.length > 0) {
+          if (homeSection.hasClass("home-full-height")) {
+            homeSection.height($(window).height());
+          } else {
+            homeSection.height($(window).height() * 0.85);
+          }
         }
+      }
     </script>
-    <script>
-        hljs.initHighlightingOnLoad();
+    <!-- <script>
+      hljs.initHighlightingOnLoad();
 
-        $('.hero__scroll').on('click', function (e) {
-            $('html, body').animate({
-                scrollTop: $(window).height()
-            }, 1200);
-        });
-        
-    </script>
-</body>
-
+      $(".hero__scroll").on("click", function (e) {
+        $("html, body").animate(
+          {
+            scrollTop: $(window).height(),
+          },
+          1200
+        );
+      });
+    </script> -->
+  </body>
 </html>

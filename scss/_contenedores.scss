@@ -1,13 +1,15 @@
 .cabecero {
     height: 300px;
 }
-.contenedor__cabecero{
-    width: 100%;
-    height: 640px;
+
+.contenedor__cabecero {
+    background-color: $color2;
+    background-color: linear-gradient(180deg, #d81b1b 0%, rgba(238, 8, 8, 0) 100%);
     background-image: url("../img/MDS_background.webp");
     background-size: cover;
 }
-.contenedor__cabecero--logo{
+
+.contenedor__cabecero--logo {
     width: 40%;
     margin-top: 100px;
     filter: drop-shadow(2px 4px 6px black);
@@ -21,18 +23,16 @@
     margin-top: 50px;
 }
 
-.contenedor__bg{
-    background-color: $colorBg;
-}
-.nosotros {
-    background-image: url("../img/nosotros.webp");
+.contenedor {
     width: 100%;
-    height: 650px;
-    background-attachment: fixed;
-    background-size: cover;
+    height: calc(100vh);
 }
 
-.contenedorTarjeta{
+.contenedor__bg {
+    background-color: $colorBg;
+}
+
+.contenedorTarjeta {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,67 +46,190 @@
     border-color: $color1;
 }
 
-.contenedorTarjeta--nosotros{
-    width: 450px;
-    height: 400px;
+.contenedor__nosotros {
     background-color: $color2;
-    color: $color4;
-    margin: 50px;
-    // margin-top: 50px;
-    // margin-bottom: 50px;
-    padding: 50px;
-    border-radius: 25px;
-    border-color: $color1;
-    // position: relative;
-    // top: 120px;
-    // right: -100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
-.contenedor__menu{
+.contenedor__nosotros--texto {
+    width: 40%;
+    color: $colorBg;
+    margin: 136px;
+    padding: 50px;
+    // border-radius: 25px;
+    // border-color: $color1;
+}
+
+.contenedor__nosotros--imagen {
+    width: calc(54vh);
+    margin-right: 10%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.contenedor__trabajos {
+    background: linear-gradient(180deg, #232325 10.66%, #000 100%);
+}
+
+.contenedor__proyectos {
+    height: 100%;
+    padding: 50px;
+    background: linear-gradient(180deg, #FFF 0%, #939393 100%);
+
+    .titulos--center {
+        color: $colorBg;
+    }
+}
+.contenedor__contacto{
+    width: 100%;
+    height: 100vh;
+}
+
+.contenedor__cards {
+    width: 213.625px;
+    margin: 8em 3em;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    color: #01BDBB;
+    text-align: center;
+    gap: 7.822px;
+}
+
+
+
+.contenedor__cards--center {
+    @extend .contenedor__cards;
+    border-left: 1px solid #FFF;
+    border-radius: 0px;
+    border-right: 1px solid #fff;
+    padding-left: 63px;
+    width: 310px;
+    padding-right: 63px;
+    box-shadow: 0px 1.6093971729px 2.7359750271px 0px rgba(0, 0, 0, 0.01), 0px 7.0813479424px 5.6650781631px 0px rgba(0, 0, 0, 0.02), 0px 17.3814888px 11.2979679108px 0px rgba(0, 0, 0, 0.02), 0px 33.4754638672px 22.1453056335px 0px rgba(0, 0, 0, 0.02), 0px 56.3288993835px 40.7177467346px 0px rgba(0, 0, 0, 0.03), 0px 86.9074478149px 69.5259552002px 0px rgba(0, 0, 0, 0.04);
+}
+
+.contenedor__menu {
     position: fixed;
     height: 60px;
-    margin-top: 40px;
+    margin-top: 30px;
     width: 100%;
     z-index: 1;
+    opacity: 100%;
+
 }
-.contenedor__menu--bar{
+
+.contenedor__menu--bar {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
 }
 
-.contenedor__menu--items{
-    padding-left: 100px;
-    padding-right: 100px;
-    font-weight: bold;
+
+.contenedor__menu--items {
+    position: relative;
+    padding: 20px 70px;
+    font-weight: 400;
+    font-size: 22px;
+    font-style: normal;
+    line-height: normal;
+    color: #FFF;
+    text-decoration: none;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 3px;
+        opacity: 0;
+        transition: opacity 0.5s ease, border-color 0.5s ease;
+    }
+
+    &:hover::after {
+        border-color: $color1;
+        opacity: 1;
+    }
+
+    // Subrayado para el estado activo sin hover
+    &.contenedor__menu--active::after {
+        opacity: 0;
+    }
+
+    // Subrayado para el estado activo con hover
+    &.contenedor__menu--active:hover::after {
+        opacity: 0; // Oculta el subrayado cuando el elemento activo está con hover
+    }
 }
 
-.titulos--center{
+
+
+
+.contenedor__menu--link {
+    color: #FFF !important;
+    text-decoration: none;
+
+    &:hover {
+        color: $color4;
+    }
+}
+
+.contenedor__menu--active {
+    color: #ffffff;
+    padding: 20px 70px;
+    font-weight: 700;
+    font-size: 22px;
+    font-style: normal;
+    line-height: normal;
+    border-radius: 50px;
+    border: 1px solid $color1;
+    background-color: $color1;
+}
+
+
+.titulos--center {
+    padding-top: 150px;
     text-align: center;
     color: $color2;
     font-weight: bold;
+    font-size: 57.852px;
+    font-style: normal;
+    //font-weight: 700;
+    line-height: normal;
 }
-.titulos--nosotros{
+
+.titulos--nosotros {
     text-align: center;
     background-color: $color2;
     font-weight: bold;
 }
-.textos{
+
+.textos {
     background-color: $color2;
-    font-weight: bolder ;
+    font-weight: bolder;
 }
 
-.formulario{
+.formulario {
     width: 500px;
     border: 2px $color1 solid;
     margin: 40px;
     padding: 40px;
     border-radius: 25px;
 }
-.formulario__input{
+
+.formulario__input {
     color: $color4;
     background-color: $color2;
 }
+
 .formulario__bloques {
     display: flex;
     align-items: baseline;
@@ -126,6 +249,7 @@
     background: $color1;
     text-transform: uppercase;
     font-weight: bold;
+
     &:hover {
         border: 2px $color1 solid;
         border-radius: 12px;
@@ -137,7 +261,7 @@
     }
 }
 
-.contenedor__mapa{
+.contenedor__mapa {
     height: auto;
     background-color: $color2;
     border: 2px $color1 solid;
@@ -145,7 +269,8 @@
     padding: 10px;
     border-radius: 25px;
 }
-.mapa{
+
+.mapa {
     width: 470px;
     height: 480px;
     border-radius: 25px;

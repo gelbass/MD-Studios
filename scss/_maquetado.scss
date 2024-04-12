@@ -20,13 +20,12 @@ body{
 
 #menu{
     grid-area: menu;    
+}
+#home{    
+    grid-area: home;
     background-color: $colorBg;
 }
-#header{
-    grid-area: header;
-    background-color: $colorBg;
-    
-}
+
 #nosotros{
     grid-area: nosotros;
     background-color: $colorBg;
