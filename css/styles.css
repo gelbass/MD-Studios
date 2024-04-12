@@ -434,21 +434,6 @@ body {
   .contenedor__contacto {
     display: inline;
   }
-  /* .contenedor__trabajos{
-      display: inline;
-  }
-  .contenedor__trabajos--cards{
-      display: flex !important;
-      flex-direction: column;
-      align-items: center;
-  }
-  .contenedor__cards--center {
-      border-left: 0px solid #FFF;
-      border-radius: 0px;
-      border-right: 0px solid #fff;
-      border-top: 1px solid #FFF;
-      border-bottom: 1px solid #fff;
-  } */
   .contenedor__cards, .contenedor__cards--center {
     margin: 5px;
   }
