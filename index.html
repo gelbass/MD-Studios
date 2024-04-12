@@ -114,13 +114,17 @@
               quae. Nihil nobis veritatis neque quia, accusantium delectus!
             </p>
           </div>
-          <div class="contenedor__nosotros--imagen  container-sm">
+          <div class="contenedor__nosotros--imagen  container-sm" data-aos="fade-up"
+          data-aos-duration="3000">
             <img src="img/nosotros.webp" alt="Nosotros">
           </div>
         </div>
         <div class="contenedor contenedor__trabajos"  id="trabajos">
           <h1 class="titulos--center">Que hacemos</h1>
-          <div class="d-flex justify-content-center contenedor__trabajos--cards">
+          <div class="d-flex justify-content-center contenedor__trabajos--cards"
+          data-aos="fade-right"
+     data-aos-offset="200"
+     data-aos-easing="ease-in-sine">
               <div class="contenedor__cards">
                 <svg xmlns="http://www.w3.org/2000/svg" width="75" height="71" viewBox="0 0 75 71" fill="none">
                   <path d="M74.375 0.769531V49.207C74.375 52.804 72.9461 56.2537 70.4026 58.7972C67.8592 61.3406 64.4095 62.7695 60.8125 62.7695C57.2155 62.7695 53.7658 61.3406 51.2224 58.7972C48.6789 56.2537 47.25 52.804 47.25 49.207C47.25 45.61 48.6789 42.1604 51.2224 39.6169C53.7658 37.0734 57.2155 35.6445 60.8125 35.6445C62.905 35.6445 64.8812 36.1095 66.625 36.962V14.2158L27.875 22.4695V56.957C27.875 60.554 26.4461 64.0037 23.9026 66.5472C21.3592 69.0906 17.9095 70.5195 14.3125 70.5195C10.7155 70.5195 7.26583 69.0906 4.72236 66.5472C2.1789 64.0037 0.75 60.554 0.75 56.957C0.75 53.36 2.1789 49.9104 4.72236 47.3669C7.26583 44.8234 10.7155 43.3945 14.3125 43.3945C16.405 43.3945 18.3813 43.8595 20.125 44.712V12.3945L74.375 0.769531Z" fill="#01BDBB"/>
@@ -207,7 +211,8 @@
       <section class="container-fluid p-0" id="contacto">
         <div class="contenedor contenedor__contacto">
           <h2 class="titulos--center">Contactanos</h2>
-          <div class="container-fluid row">
+          <div class="container-fluid row" data-aos="fade-up"
+          data-aos-duration="3000">
             <div class="col-md d-flex justify-content-center">
               <form class="form-control formulario" action="">
                 <div class="form-group row formulario__bloques">
@@ -310,8 +315,9 @@
 
       <!-- FOOTER -->
       <footer class="container-fluid pie contenedor__bg" id="footer">
-        <a class="flechaStart" href="#home" 
-        ><i class="fa-solid fa-angles-up"></i></a>        
+        <a class="flechaStart" href="#home">
+          <i class="fa-solid fa-angles-up"></i>
+        </a>        
         <div class="row">
           <div class="col-md">
             <a href="#"
@@ -384,17 +390,5 @@
         }
       }
     </script>
-    <!-- <script>
-      hljs.initHighlightingOnLoad();
-
-      $(".hero__scroll").on("click", function (e) {
-        $("html, body").animate(
-          {
-            scrollTop: $(window).height(),
-          },
-          1200
-        );
-      });
-    </script> -->
   </body>
 </html>

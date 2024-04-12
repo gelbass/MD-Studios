@@ -4,9 +4,9 @@
 
 .contenedor__cabecero {
     background-color: $color2;
-    background-color: linear-gradient(180deg, #d81b1b 0%, rgba(238, 8, 8, 0) 100%);
     background-image: url("../img/MDS_background.webp");
     background-size: cover;
+    background-position: center;
 }
 
 .contenedor__cabecero--logo {
@@ -21,6 +21,8 @@
     text-align: center;
     border-radius: 50px 50px 0 0;
     margin-top: 50px;
+    display: inline;
+   
 }
 
 .contenedor {
@@ -58,8 +60,6 @@
     color: $colorBg;
     margin: 136px;
     padding: 50px;
-    // border-radius: 25px;
-    // border-color: $color1;
 }
 
 .contenedor__nosotros--imagen {
@@ -86,7 +86,7 @@
 }
 .contenedor__contacto{
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .contenedor__cards {
